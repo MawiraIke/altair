@@ -275,8 +275,8 @@ be controlled:
     )
 
     chart.configure_view(
-        height=200,
-        width=200,
+        continuousHeight=200,
+        continuousWidth=200,
         strokeWidth=4,
         fill='#FFEEDD',
         stroke='red',
@@ -301,7 +301,7 @@ For example, the default theme configures the default size of a single chart:
     >>> import altair as alt
     >>> default = alt.themes.get()
     >>> default()
-    {'config': {'view': {'height': 300, 'width': 400}}}
+    {'config': {'view': {'continuousWidth': 400, 'continuousHeight': 300}}}
 
 You can see that any chart you create will have this theme applied, and these configurations
 added to its specification:
